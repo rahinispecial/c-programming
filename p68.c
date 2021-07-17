@@ -9,7 +9,7 @@ int main(){
         i++;
     }
     i=0;
-    big=0;
+    big=a[0];
     while(i<10){
         if(a[i]>big){
         big=a[i];
