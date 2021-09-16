@@ -25,6 +25,33 @@ int main(){
     while(i<3){
         j=0;
         while(j<3){
+        
+            printf("%d ",a[i][j]);
+            j++;
+        }
+        printf("\n");
+        i++;
+        
+    }
+    printf("\n");
+    i=0;
+    while(i<3){
+        j=0;
+        while(j<3){
+        
+            printf("%d ",b[i][j]);
+            j++;
+        }
+        printf("\n");
+        i++;
+        
+    }
+    
+    i=0;
+    while(i<3){
+        j=0;
+       while(j<3){
+          c[i][j]=0;
             k=0;
             while (k<3){
                 c[i][j]=c[i][j]+(a[i][k]*b[k][j]);
@@ -38,9 +65,10 @@ int main(){
     while(i<3){
         j=0;
         while(j<3){
-            printf("%d",c[i][j]);
+            printf("%d ",c[i][j]);
             j++;
         }
+        printf("\n");
         i++;
     }
 }

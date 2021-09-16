@@ -1,0 +1,28 @@
+/* pg no 83
+Aim : to find the mean  value of 3*3 matrix*/
+#include <stdio.h>
+int main(){
+    int i,j,a[3][3],sum;
+    float mean;
+    i=0;
+    while(i<3){
+        j=0;
+        while(j<3){
+            scanf("%d",&a[i][j]);
+            j++;
+        }
+        i++;
+    }
+    sum=0;
+    i=0;
+    while(i<3){
+        j=0;
+        while(j<3){
+            sum=sum+a[i][j];
+            j++;
+        }
+        i++;
+    }
+    mean=sum/(i*j);
+    printf("%f",mean);
+}
